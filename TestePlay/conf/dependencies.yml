@@ -1,0 +1,12 @@
+# Application dependencies
+require:
+    - play
+    - takenami -> restapi 0.1
+
+# My custom repositories
+repositories:
+    - takenami:
+        type:       http
+        artifact:   "https://dl.dropboxusercontent.com/u/1179639/restapi-0.1.zip"
+        contains:
+            - takenami -> *

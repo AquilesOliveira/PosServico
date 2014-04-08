@@ -1,0 +1,17 @@
+# This file defines all module routes (Higher priority routes first)
+#
+# import these routes in the main app as :
+# *     /                       module:restapi
+#
+# ~~~~
+
+%{ frm = play.configuration.getProperty('rest.render', 'json') }% 
+
+GET     /{controller}                       {controller}.listAll(format:'${frm}')
+POST    /{controller}                       {controller}.save(format:'${frm}') 
+GET     /{controller}/{id}                  {controller}.findId(format:'${frm}')
+DELETE  /{controller}/{id}                  {controller}.delete(format:'${frm}')
+PUT     /{controller}/{id}                  {controller}.save(format:'${frm}') 
+
+*       /{controller}                       restapi.DefaultController.routeErro
+*       /{controller}/{id}                  restapi.DefaultController.routeErro

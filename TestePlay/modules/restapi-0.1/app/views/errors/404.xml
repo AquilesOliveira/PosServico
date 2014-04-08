@@ -1,0 +1,5 @@
+<controllers.services.utils.Result>
+  <Result>1</Result>
+  <Content class="string"></Content>
+  <Exception class="string">${result.message}</Exception>
+</controllers.services.utils.Result>

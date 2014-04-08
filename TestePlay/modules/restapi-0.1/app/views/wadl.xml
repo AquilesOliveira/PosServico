@@ -1,0 +1,40 @@
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+             xsi:schemaLocation="http://research.sun.com/wadl/2006/10 
+             https://wadl.dev.java.net/wadl20061109.xsd"
+             xmlns="http://research.sun.com/wadl/2006/10">
+
+    <grammars/> 
+    
+    <resources base="${ulrbase}">
+        
+        #{list items:paths.keySet(), as:'key'}
+            <resource path="${key}">
+            #{list items:p_params.keySet(), as:'par'}
+                #{if key.indexOf(par)>=0}
+                    <param name="${p_params.get(par).name}" type="xsd:${p_params.get(par).type}" style="template"/>
+                #{/if}
+            #{/list}
+            #{list items:paths.get(key), as:'p'}
+                <method #{if p.id}id="${p.id}"#{/if} name="${p.method}">
+                    #{if p.params}
+                    <request>
+                        #{list items:p.params, as:'pr'}
+                        <param name="${pr.name}" type="xsd:${pr.type}" style="query" required="true"/>
+                        #{/list}
+                    </request>
+                    #{/if}#{else}
+                    <request/>
+                    #{/else}
+                        <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            #{/list}
+            </resource>    
+        #{/list}
+
+        
+    </resources>
+    
+</application>
