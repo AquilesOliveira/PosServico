@@ -19,12 +19,12 @@
 		<link>
 			<name>restapi-0.1</name>
 			<type>2</type>
-			<location>/Users/koonjshah/Documents/TestePlay/modules/restapi-0.1/app</location>
+			<location>/Users/koonjshah/Downloads/TestePlay/modules/restapi-0.1/app</location>
 		</link>
 		<link>
 			<name>conf/restapi-0.1</name>
 			<type>2</type>
-			<location>/Users/koonjshah/Documents/TestePlay/modules/restapi-0.1/conf</location>
+			<location>/Users/koonjshah/Downloads/TestePlay/modules/restapi-0.1/conf</location>
 		</link>
 	</linkedResources>
 </projectDescription>

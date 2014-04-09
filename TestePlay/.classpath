@@ -6,9 +6,9 @@
 	
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/Users/koonjshah/Downloads/Aquiles/play_cook/play-1.2.5/framework/play-1.2.5.jar" sourcepath="/Users/koonjshah/Downloads/Aquiles/play_cook/play-1.2.5/framework/src" />
-	<classpathentry kind="lib" path="/Users/koonjshah/Documents/TestePlay/modules/restapi-0.1/lib/gson-2.2.2.jar"/>
-	<classpathentry kind="lib" path="/Users/koonjshah/Documents/TestePlay/modules/restapi-0.1/lib/play-restapi.jar"/>
-	<classpathentry kind="lib" path="/Users/koonjshah/Documents/TestePlay/modules/restapi-0.1/lib/rest-util-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/koonjshah/Downloads/TestePlay/modules/restapi-0.1/lib/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="/Users/koonjshah/Downloads/TestePlay/modules/restapi-0.1/lib/play-restapi.jar"/>
+	<classpathentry kind="lib" path="/Users/koonjshah/Downloads/TestePlay/modules/restapi-0.1/lib/rest-util-1.0.jar"/>
 	<classpathentry kind="lib" path="/Users/koonjshah/Downloads/Aquiles/play_cook/play-1.2.5/framework/lib/activation-1.1.1.jar"/>
 	<classpathentry kind="lib" path="/Users/koonjshah/Downloads/Aquiles/play_cook/play-1.2.5/framework/lib/antlr-2.7.7.jar"/>
 	<classpathentry kind="lib" path="/Users/koonjshah/Downloads/Aquiles/play_cook/play-1.2.5/framework/lib/asm-all-3.3.1.jar"/>

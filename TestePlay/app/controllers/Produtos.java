@@ -18,7 +18,14 @@ public class Produtos extends DefaultController {
 		final List<Produto> produtos = Produto.findAll();
 		renderObject(Result.OK(produtos));
 	}
-
+        
+        @Path(method = "GET", id = "findName")
+	public static void findName(final String nome) {
+		final List<Produto> produtos = Produto.find("nome = ?", nome).fetch();
+                System.out.println("Econtrei o produto: "+produtos.toString());
+                renderObject(Result.OK(produtos));
+	}
+        
 	@Path(name = "/{id}", method = "GET", id = "getProdutoById")
 	public static void findId(final Long id) {
 		if (id != null) {
