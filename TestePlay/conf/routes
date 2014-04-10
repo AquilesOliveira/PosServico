@@ -1,6 +1,6 @@
 GET   /						Wadl.generate
 GET   /api					Wadl.generate
-GET   /api/produtos/{nome}			Produtos.findName
+GET   /api/produtos/findName/{nome}		Produtos.findName
 GET   /api/wadl				Wadl.generate
 *     /api/                 module:restapi
 
